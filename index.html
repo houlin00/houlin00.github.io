@@ -28,18 +28,19 @@
     <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="font-bold text-xl text-navy">Richard H. Wang</a>
-            <div class="space-x-6 text-sm font-medium text-slate-600">
+            <div class="space-x-6 text-sm font-medium text-slate-600 hidden md:block">
                 <a href="#about" class="hover:text-accent transition">About</a>
                 <a href="#projects" class="hover:text-accent transition">Projects & Research</a>
+                <a href="#teaching" class="hover:text-accent transition">Teaching</a>
+                <a href="#publications" class="hover:text-accent transition">Publications</a>
                 <a href="#skills" class="hover:text-accent transition">Skills</a>
-                <a href="#leadership" class="hover:text-accent transition">Leadership</a>
                 <a href="resume.pdf" target="_blank" class="bg-navy text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">CV / Resume</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="about" class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
+    <section id="about" class="pt-32 pb-16 px-6 max-w-5xl mx-auto">
         <div class="flex flex-col md:flex-row items-center gap-10">
             <div class="space-y-4 flex-1">
                 <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
@@ -49,16 +50,16 @@
                     Hi, I'm Richard Wang.
                 </h1>
                 <p class="text-lg text-slate-600 leading-relaxed">
-                    I am a quantitative researcher specializing in experimental design, statistical modeling, and computational linguistics. My work focuses on modeling complex constraint systems, evaluating AI model performance across domain transfers, and building scalable data processing pipelines.
+                    I am a quantitative researcher specializing in computational linguistics, phonology, statistical modeling, and experimental design. My work focuses on modeling constraint systems, evaluating AI speech model performance across domain transfers, and building reproducible data processing pipelines.
                 </p>
                 <div class="pt-2 flex flex-wrap gap-4">
                     <a href="mailto:hwang374@ucsc.edu" class="flex items-center gap-2 bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-800 transition">
-                        <i class="fa-solid me-1 fa-envelope"></i> Contact Me
+                        <i class="fa-solid fa-envelope"></i> Contact Me
                     </a>
                     <a href="https://github.com/yourusername" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-50 transition">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-50 transition">
+                    <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-50 transition text-blue-600">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
@@ -82,7 +83,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">AI Speech-to-Text Model Performance Evaluation</h3>
                         <p class="text-slate-600 text-sm mb-4">
-                            Benchmarked commercial AI speech-to-text tools across trained vs. novel language environments. Standardized quality-control protocols across 90+ hours of field audio and provided executive deployment recommendations.
+                            Benchmarked commercial AI speech-to-text tools across trained vs. novel language environments. Standardized quality-control protocols across 90+ hours of field audio and provided deployment recommendations.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
@@ -101,7 +102,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Large-Scale Mixed-Effects Experimental Modeling</h3>
                         <p class="text-slate-600 text-sm mb-4">
-                            Designed end-to-end experimental data pipelines processing 13,680+ discrete observations across 85 participants. Applied mixed-effects linear and logistic regression in R to identify predictors driving structural variance.
+                            Designed end-to-end experimental data pipelines processing 13,680+ discrete observations across 85 participants. Applied mixed-effects linear and logistic regression in R to identify structural variance predictors.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
@@ -110,45 +111,142 @@
                         <span class="bg-white border px-2.5 py-1 rounded">Automated Pipelines</span>
                     </div>
                 </div>
-
-                <!-- Project Card 3 -->
-                <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-lightbg flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Science Internship Program</span>
-                            <span class="text-xs text-slate-400">Summer 2026</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Computational Speech Analysis Curriculum</h3>
-                        <p class="text-slate-600 text-sm mb-4">
-                            Designed and delivered an 8-week structured computational curriculum for high school interns. Guided students through environment setup, signal processing, acoustic extraction, and final presentation of quantitative results.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-white border px-2.5 py-1 rounded">Curriculum Design</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Mentorship</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Technical Pedagogy</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-lightbg flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">UCLA Phonology Lab</span>
-                            <span class="text-xs text-slate-400">2019 – 2021</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Computational Lexical Distribution Algorithms</h3>
-                        <p class="text-slate-600 text-sm mb-4">
-                            Engineered Python algorithms to predict structural occurrence patterns across 10,000+ lexical entries. Built reproducible data cleaning and analysis pipelines using R and regular expressions.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-white border px-2.5 py-1 rounded">Python</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Algorithm Design</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Lexical Corpora</span>
-                    </div>
-                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- TEACHING EXPERIENCE -->
+    <section id="teaching" class="py-16 max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-navy mb-2">Teaching Experience</h2>
+        <p class="text-slate-600 mb-8">Teaching Assistant roles for undergraduate courses at UC Santa Cruz.</p>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-6 space-y-4">
+            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 102: Phonology II</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Rachel Walker)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Fall 2024</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 50: Introduction to Linguistics</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Summer 2024</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 50: Introduction to Linguistics</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Andrew Angeles)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Spring 2024</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 101: Phonology I</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Winter 2024</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 80M: Language and Indigeneity in Mesoamerica</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Ryan Bennett)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Winter 2024</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 100: Phonetics I</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Fall 2023</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div>
+                    <span class="font-bold text-slate-900">Ling 50: Introduction to Linguistics</span>
+                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Matt Wagers)</span>
+                </div>
+                <span class="text-sm font-semibold text-blue-600">Summer 2023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS & PRESENTATIONS -->
+    <section id="publications" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 space-y-12">
+            
+            <!-- Publications -->
+            <div>
+                <h2 class="text-2xl font-bold text-navy mb-6">Publications</h2>
+                
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Proceedings</h3>
+                <ul class="space-y-4 mb-6 text-sm text-slate-700">
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
+                        <strong>Wang, Richard</strong>. To appear. <em>Morphosyntactically conditioned footing in Beijing Mandarin: Evidence from retroflex lenition</em>. Proceedings of the 41st West Coast Conference on Formal Linguistics.
+                    </li>
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
+                        <strong>Wang, Richard</strong>. To appear. <em>The distribution of tone affects prosodic parsing in Beijing Mandarin: Evidence from retroflex lenition</em>. Supplemental Proceedings of the 2023 Annual Meeting on Phonology.
+                    </li>
+                </ul>
+
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Edited Volumes</h3>
+                <ul class="text-sm text-slate-700">
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
+                        Toosarvardani, Maziar, Nikolas Webster, Yağmur Kiper, <strong>Richard Wang</strong> & Larry Lyu (eds). <em>Proceedings of the 41st West Coast Conference on Formal Linguistics</em>.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Presentations -->
+            <div>
+                <h2 class="text-2xl font-bold text-navy mb-6">Presentations & Talks</h2>
+                
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Invited Talks</h3>
+                <ul class="space-y-3 mb-6 text-sm text-slate-700">
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
+                        <strong>Wang, Richard</strong>. 2024. <em>Morphosyntactically conditioned footing in Beijing Mandarin: Evidence from retroflex lenition</em>. Presented at the Phorum Reading Group at UC Berkeley, Berkeley, CA. October 14.
+                    </li>
+                </ul>
+
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Conference Posters</h3>
+                <ul class="space-y-3 text-sm text-slate-700">
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <div>
+                            <strong>Wang, Richard</strong>. 2024. <em>Distribution of neutral tone and retroflex lenition in Beijing Mandarin</em>. Presented at the 98th Annual Meeting of the Linguistics Society of America, New York, NY. Jan 2.
+                        </div>
+                        <a href="https://drive.google.com/file/d/1ftybTbG0-pZCxllmmNQHLeh1P3Vfjq3E/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0">
+                            <i class="fa-solid fa-file-pdf"></i> Poster PDF
+                        </a>
+                    </li>
+
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <div>
+                            <strong>Wang, Richard</strong>. 2023. <em>Distribution of neutral tone and retroflex lenition in Beijing Mandarin</em>. Presented at the Annual Meeting on Phonology. Online, hosted by Johns Hopkins University. Oct 13.
+                        </div>
+                        <a href="https://drive.google.com/file/d/1NspNPxnjxNOgfITI5isaB40XczzFziaI/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0">
+                            <i class="fa-solid fa-file-pdf"></i> Poster PDF
+                        </a>
+                    </li>
+
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                        <div>
+                            <strong>Wang, Richard</strong>. 2023. <em>Morphosyntactically conditioned footing in Beijing Mandarin: Evidence from retroflex lenition</em>. Presented at the 41st West Coast Conference on Formal Linguistics, UC Santa Cruz, Santa Cruz, CA. May 4.
+                        </div>
+                        <a href="https://drive.google.com/file/d/1o13tv1VJMp67bUWLMCcb1ukCfbnmwThs/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0">
+                            <i class="fa-solid fa-file-pdf"></i> Poster PDF
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
@@ -171,9 +269,9 @@
                 <h3 class="font-bold text-slate-900 mb-2">Programming & Tools</h3>
                 <ul class="text-sm text-slate-600 space-y-1.5">
                     <li>• R (lme4, ggplot2, tidyverse)</li>
-                    <li>• Python (Data Analysis, Automation)</li>
+                    <li>• Python (Data Pipelines)</li>
                     <li>• SQL & Database Management</li>
-                    <li>• Git / Version Control & LaTeX</li>
+                    <li>• Git & LaTeX</li>
                 </ul>
             </div>
             <div class="bg-white p-6 rounded-xl border border-slate-200">
@@ -189,30 +287,6 @@
         </div>
     </section>
 
-    <!-- LEADERSHIP & SERVICE -->
-    <section id="leadership" class="py-16 bg-white border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-navy mb-8">Leadership & Departmental Service</h2>
-            <div class="space-y-6">
-                <div class="border-l-2 border-navy pl-6 py-1">
-                    <h3 class="font-bold text-slate-900">Equity in Linguistics Committee Member</h3>
-                    <p class="text-xs text-slate-400 mb-2">UCSC Linguistics Department | 2023 – 2025</p>
-                    <p class="text-sm text-slate-600">Organized events promoting international, gender, and academic equity; synthesized departmental feedback to advise faculty and managed event catering logistics for 30+ attendees.</p>
-                </div>
-                <div class="border-l-2 border-slate-300 pl-6 py-1">
-                    <h3 class="font-bold text-slate-900">Committee Chair</h3>
-                    <p class="text-xs text-slate-400 mb-2">UCSC Linguistics Department | 2023 – 2024</p>
-                    <p class="text-sm text-slate-600">Managed logistics, team coordination, and budgets for 5+ departmental events serving 50+ attendees.</p>
-                </div>
-                <div class="border-l-2 border-slate-300 pl-6 py-1">
-                    <h3 class="font-bold text-slate-900">Newsletter Editor</h3>
-                    <p class="text-xs text-slate-400 mb-2">UCSC Linguistics Department | 2023 – 2024</p>
-                    <p class="text-sm text-slate-600">Managed editorial calendar and coordinated 10+ contributors to publish monthly departmental newsletters on schedule.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- FOOTER -->
     <footer class="bg-navy text-white py-10 border-t border-slate-800">
         <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
@@ -220,7 +294,7 @@
             <div class="flex justify-center gap-6 text-lg text-slate-400">
                 <a href="mailto:hwang374@ucsc.edu" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://github.com/yourusername" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
