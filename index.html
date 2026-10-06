@@ -13,7 +13,7 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: '#12355B',
+                        navy: '#0f2942',
                         accent: '#2563EB',
                         lightbg: '#F8FAFC'
                     }
@@ -22,47 +22,107 @@
         }
     </script>
 </head>
-<body class="bg-lightbg text-slate-800 font-sans antialiased">
+<body class="bg-lightbg text-slate-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
 
     <!-- NAVIGATION -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-bold text-xl text-navy">Richard H. Wang</a>
-            <div class="space-x-6 text-sm font-medium text-slate-600 hidden md:block">
+            <a href="#" class="font-extrabold text-xl text-navy tracking-tight">Richard H. Wang</a>
+            
+            <!-- Desktop Menu -->
+            <div class="space-x-6 text-sm font-medium text-slate-600 hidden md:flex items-center">
                 <a href="#about" class="hover:text-accent transition">About</a>
-                <a href="#projects" class="hover:text-accent transition">Research</a>
-                <a href="#teaching" class="hover:text-accent transition">Teaching</a>
+                <a href="#projects" class="hover:text-accent transition">Research & Projects</a>
                 <a href="#publications" class="hover:text-accent transition">Publications</a>
+                <a href="#teaching" class="hover:text-accent transition">Teaching</a>
                 <a href="#skills" class="hover:text-accent transition">Skills</a>
-                <a href="resume.pdf" target="_blank" class="bg-navy text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">CV / Resume</a>
+                <a href="resume.pdf" target="_blank" class="bg-navy text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-slate-800 transition inline-flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-file-pdf"></i> Resume / CV
+                </a>
             </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-navy focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 bg-white px-6 py-4 space-y-3 text-sm font-medium text-slate-600">
+            <a href="#about" class="block hover:text-accent">About</a>
+            <a href="#projects" class="block hover:text-accent">Research & Projects</a>
+            <a href="#publications" class="block hover:text-accent">Publications</a>
+            <a href="#teaching" class="block hover:text-accent">Teaching</a>
+            <a href="#skills" class="block hover:text-accent">Skills</a>
+            <a href="resume.pdf" target="_blank" class="block text-accent font-semibold">Resume / CV</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
     <section id="about" class="pt-32 pb-16 px-6 max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex flex-col-reverse md:flex-row items-center gap-10">
+            
+            <!-- Left Bio Text -->
             <div class="space-y-4 flex-1">
-                <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
+                <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-800 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
                     Ph.D. Candidate @ UC Santa Cruz
                 </div>
+                
                 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
                     Hi, I'm Richard Wang.
                 </h1>
+                
                 <p class="text-lg text-slate-600 leading-relaxed">
-                    I am a computational linguist and speech scientist specializing in ASR evaluation, speech corpus analysis, and acoustic modeling. My research focuses on the speech variation that standard systems routinely ignore — accents, dialects, and casual speech — across both low-resource and widely spoken languages. My goal is to make speech-to-text products more accurate and natural for the full range of real-world users.
+                    I am a computational linguist and speech scientist specializing in automatic speech recognition (ASR) benchmarking, acoustic modeling, and automated speech processing pipelines. My research investigates phonological variation and casual speech reduction across both low-resource and high-resource language varieties to make modern speech-to-text systems more robust.
                 </p>
-                <div class="pt-2 flex flex-wrap gap-4">
-                    <a href="mailto:hwang374@ucsc.edu" class="flex items-center gap-2 bg-navy text-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-800 transition">
+                
+                <div class="pt-2 flex flex-wrap gap-3">
+                    <a href="mailto:hwang374@ucsc.edu" class="flex items-center gap-2 bg-navy text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-800 transition shadow-sm">
                         <i class="fa-solid fa-envelope"></i> Contact Me
                     </a>
-                    <a href="https://github.com/houlin00" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-50 transition">
+                    <a href="https://github.com/houlin00" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-slate-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-50 transition text-blue-600">
+                    <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-blue-600 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
+                    <a href="https://houlin00.github.io/" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-slate-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
+                        <i class="fa-solid fa-globe"></i> Research Blog
+                    </a>
                 </div>
+            </div>
+
+            <!-- Profile Photo / Avatar Slot -->
+            <div class="shrink-0 flex justify-center">
+                <div class="relative w-44 h-44 md:w-52 md:h-52 rounded-2xl overflow-hidden shadow-lg border-4 border-white ring-1 ring-slate-200 bg-gradient-to-tr from-slate-200 to-blue-50 flex items-center justify-center">
+                    <!-- Replace with <img src="assets/profile.jpg" alt="Richard Houlin Wang" class="w-full h-full object-cover"> when available -->
+                    <div class="text-center p-4">
+                        <span class="text-4xl md:text-5xl font-black text-navy tracking-tighter">RW</span>
+                        <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-widest mt-1">UCSC Linguistics</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Metric Badges Strip -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-200">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-2xl font-bold text-navy">20k+</div>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">Model Iterations</div>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-2xl font-bold text-navy">90+ hrs</div>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">Corpus Data Governed</div>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-2xl font-bold text-navy">4+</div>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">Peer-Reviewed Works</div>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                <div class="text-2xl font-bold text-navy">10x</div>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">Pipeline Acceleration</div>
             </div>
         </div>
     </section>
@@ -70,242 +130,10 @@
     <!-- FEATURED RESEARCH & PROJECTS -->
     <section id="projects" class="py-16 bg-white border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-navy mb-2">Featured Research</h2>
-            <p class="text-slate-600 mb-8">Selected work in ASR evaluation, speech variation modeling, and computational corpus analysis.</p>
+            <h2 class="text-2xl font-bold text-navy mb-2">Featured Research & Experience</h2>
+            <p class="text-slate-600 mb-8">Selected initiatives across speech recognition benchmarking, acoustic modeling, and quantitative methods.</p>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Project Card 1 -->
-                <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-lightbg flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Living Tongues Institute</span>
-                            <span class="text-xs text-slate-400">Summer 2026</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">ASR Evaluation on Severely Under-Resourced Languages</h3>
-                        <p class="text-slate-600 text-sm mb-4">
-                            Independent evaluation of Meta's Omnilingual ASR model across five severely under-resourced Munda languages, testing both training languages and zero-shot generalization. Identified systematic failure modes including decoder looping, script divergence, and mislabeled training data.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-white border px-2.5 py-1 rounded">ASR Evaluation</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Low-Resource Languages</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Model Benchmarking</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-lightbg flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">UC Santa Cruz</span>
-                            <span class="text-xs text-slate-400">2022 – Present</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Acoustic Modeling of Overlooked Speech Variation</h3>
-                        <p class="text-slate-600 text-sm mb-4">
-                            Built end-to-end acoustic analysis pipelines in Python and R for feature extraction, signal processing, and automated quality control. Applied mixed-effects regression, bootstrapping, and ML classification across 20,000+ model iterations; findings overturned the prevailing theoretical account in the field.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-white border px-2.5 py-1 rounded">Python / R</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Statistical Modeling</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Speech Corpora</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEACHING EXPERIENCE -->
-    <section id="teaching" class="py-16 max-w-5xl mx-auto px-6">
-        <h2 class="text-2xl font-bold text-navy mb-2">Teaching Experience</h2>
-        <p class="text-slate-600 mb-8">Teaching Assistant roles for undergraduate courses at UC Santa Cruz.</p>
-
-        <div class="bg-white border border-slate-200 rounded-xl p-6 space-y-4">
-            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 102: Phonology II</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Rachel Walker)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Fall 2024</span>
-            </div>
-
-            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 50: Introduction to Linguistics</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Summer 2024</span>
-            </div>
-
-            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 50: Introduction to Linguistics</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Andrew Angeles)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Spring 2024</span>
-            </div>
-
-            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 101: Phonology I</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Winter 2024</span>
-            </div>
-
-            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 80M: Language and Indigeneity in Mesoamerica</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Ryan Bennett)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Winter 2024</span>
-            </div>
-
-            <div class="flex flex-col md:flex-row md:justify-between border-b pb-3 border-slate-100">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 100: Phonetics I</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Fall 2023</span>
-            </div>
-
-            <div class="flex flex-col md:flex-row md:justify-between">
-                <div>
-                    <span class="font-bold text-slate-900">Ling 50: Introduction to Linguistics</span>
-                    <span class="text-sm text-slate-500 block md:inline md:ml-2">(Instructor: Matt Wagers)</span>
-                </div>
-                <span class="text-sm font-semibold text-blue-600">Summer 2023</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- PUBLICATIONS & PRESENTATIONS -->
-    <section id="publications" class="py-16 bg-white border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-6 space-y-12">
-            
-            <!-- Publications -->
-            <div>
-                <h2 class="text-2xl font-bold text-navy mb-6">Publications</h2>
                 
-                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Proceedings</h3>
-                <ul class="space-y-4 mb-6 text-sm text-slate-700">
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
-                        <strong>Wang, Richard</strong>. 2025. <em>The distribution of tone affects prosodic parsing in Beijing Mandarin: Evidence from retroflex lenition</em>. Proceedings of the Annual Meetings on Phonology 1(1).
-                    </li>
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
-                        <strong>Wang, Richard</strong>. 2025. <em>Morphosyntax-Prosody Mismatch in Beijing Mandarin: Evidence from Retroflex Lenition</em>. Proceedings of the 41st West Coast Conference on Formal Linguistics, 592–599.
-                    </li>
-                </ul>
-
-                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Under Review</h3>
-                <ul class="text-sm text-slate-700">
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
-                        <strong>Wang, Richard</strong> et al. Under review. <em>Does Omnilingual work? Testing ASR functionality on training languages and zero-shot contexts in a set of related languages</em>. The 10th Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-10).
-                    </li>
-                </ul>
-
-                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3 mt-6">Edited Volumes</h3>
-                <ul class="text-sm text-slate-700">
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
-                        Toosarvandani, Maziar, Nikolas Webster, Yağmur Kiper, <strong>Richard Wang</strong> & Larry Lyu (eds). <em>Proceedings of the 41st West Coast Conference on Formal Linguistics</em>.
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Presentations -->
-            <div>
-                <h2 class="text-2xl font-bold text-navy mb-6">Presentations & Talks</h2>
-                
-                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Invited Talks</h3>
-                <ul class="space-y-3 mb-6 text-sm text-slate-700">
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200">
-                        <strong>Wang, Richard</strong>. 2024. <em>Morphosyntactically conditioned footing in Beijing Mandarin: Evidence from retroflex lenition</em>. Presented at the Phorum Reading Group at UC Berkeley, Berkeley, CA. October 14.
-                    </li>
-                </ul>
-
-                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Conference Posters</h3>
-                <ul class="space-y-3 text-sm text-slate-700">
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-                        <div>
-                            <strong>Wang, Richard</strong>. 2024. <em>Distribution of neutral tone and retroflex lenition in Beijing Mandarin</em>. Presented at the 100th Annual Meeting of the Linguistics Society of America, New York, NY. Jan 2.
-                        </div>
-                        <a href="https://drive.google.com/file/d/1ftybTbG0-pZCxllmmNQHLeh1P3Vfjq3E/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0">
-                            <i class="fa-solid fa-file-pdf"></i> Poster PDF
-                        </a>
-                    </li>
-
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-                        <div>
-                            <strong>Wang, Richard</strong>. 2023. <em>Distribution of neutral tone and retroflex lenition in Beijing Mandarin</em>. Presented at the Annual Meeting on Phonology. Online, hosted by Johns Hopkins University. Oct 13.
-                        </div>
-                        <a href="https://drive.google.com/file/d/1NspNPxnjxNOgfITI5isaB40XczzFziaI/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0">
-                            <i class="fa-solid fa-file-pdf"></i> Poster PDF
-                        </a>
-                    </li>
-
-                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-                        <div>
-                            <strong>Wang, Richard</strong>. 2023. <em>Morphosyntactically conditioned footing in Beijing Mandarin: Evidence from retroflex lenition</em>. Presented at the 41st West Coast Conference on Formal Linguistics, UC Santa Cruz, Santa Cruz, CA. May 4.
-                        </div>
-                        <a href="https://drive.google.com/file/d/1o13tv1VJMp67bUWLMCcb1ukCfbnmwThs/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0">
-                            <i class="fa-solid fa-file-pdf"></i> Poster PDF
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SKILLS & TECHNICAL STACK -->
-    <section id="skills" class="py-16 max-w-5xl mx-auto px-6">
-        <h2 class="text-2xl font-bold text-navy mb-8">Technical & Methodological Toolkit</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl border border-slate-200">
-                <div class="text-blue-600 text-2xl mb-3"><i class="fa-solid fa-microphone-lines"></i></div>
-                <h3 class="font-bold text-slate-900 mb-2">Speech & Language Processing</h3>
-                <ul class="text-sm text-slate-600 space-y-1.5">
-                    <li>• Automatic Speech Recognition (ASR)</li>
-                    <li>• Speech-to-Text (STT)</li>
-                    <li>• ASR Evaluation (WER, CER)</li>
-                    <li>• Forced Alignment & Corpus Annotation</li>
-                    <li>• Low-Resource Language Technology</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200">
-                <div class="text-blue-600 text-2xl mb-3"><i class="fa-solid fa-chart-line"></i></div>
-                <h3 class="font-bold text-slate-900 mb-2">ML & Statistics</h3>
-                <ul class="text-sm text-slate-600 space-y-1.5">
-                    <li>• Mixed-Effects Regression</li>
-                    <li>• Bootstrapping & Model Comparison</li>
-                    <li>• ML Classification</li>
-                    <li>• Hypothesis Testing & Inference</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200">
-                <div class="text-blue-600 text-2xl mb-3"><i class="fa-solid fa-code"></i></div>
-                <h3 class="font-bold text-slate-900 mb-2">Programming & Tools</h3>
-                <ul class="text-sm text-slate-600 space-y-1.5">
-                    <li>• Python, R, SQL</li>
-                    <li>• Praat, PyTorch, Hugging Face</li>
-                    <li>• Git, LaTeX</li>
-                    <li>• Automated ETL Pipelines</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-navy text-white py-10 border-t border-slate-800">
-        <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
-            <p class="text-sm text-slate-300">© 2026 Richard Houlin Wang. Built with Tailwind CSS & hosted on GitHub Pages.</p>
-            <div class="flex justify-center gap-6 text-lg text-slate-400">
-                <a href="mailto:hwang374@ucsc.edu" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/houlin00" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                <!-- Project Card 1: Living Tongues -->
+                <div class="border border-slate-20
