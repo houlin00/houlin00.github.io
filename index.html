@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Houlin Wang | Computational Linguist & Speech Scientist</title>
+    <title>Houlin (Richard) Wang | Computational Linguist & Speech Scientist</title>
+    <meta name="description" content="Houlin (Richard) Wang is a Ph.D. candidate in Linguistics at UC Santa Cruz working on ASR evaluation, speech corpus analysis, and detection of casual-speech variation in Mandarin and low-resource languages.">
+    <meta property="og:title" content="Houlin (Richard) Wang | Computational Linguist & Speech Scientist">
+    <meta property="og:description" content="ASR evaluation, speech corpus analysis, and acoustic modeling of the variation standard systems ignore.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://houlin00.github.io/profile.jpg">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -13,30 +18,35 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: '#12355B',
-                        accent: '#2563EB',
+                        navy: '#123C3F',
+                        accent: '#0F766E',
                         lightbg: '#F8FAFC'
                     }
                 }
             }
         }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Inter',system-ui,sans-serif}.font-display{font-family:'Source Serif 4',Georgia,serif}</style>
 </head>
-<body class="bg-lightbg text-slate-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+<body class="bg-lightbg text-slate-800 font-sans antialiased selection:bg-teal-100 selection:text-teal-900">
 
     <!-- NAVIGATION -->
     <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-extrabold text-xl text-navy tracking-tight">Richard H. Wang</a>
+            <a href="#" class="font-extrabold text-xl text-navy tracking-tight">Houlin (Richard) Wang</a>
             
             <!-- Desktop Menu -->
             <div class="space-x-6 text-sm font-medium text-slate-600 hidden md:flex items-center">
                 <a href="#about" class="hover:text-accent transition">About</a>
-                <a href="#projects" class="hover:text-accent transition">Research & Experience</a>
+                <a href="#research" class="hover:text-accent transition">Research</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
                 <a href="#publications" class="hover:text-accent transition">Publications</a>
                 <a href="#teaching" class="hover:text-accent transition">Teaching</a>
                 <a href="#awards" class="hover:text-accent transition">Awards</a>
-                <a href="#leadership" class="hover:text-accent transition">Leadership</a>
+                <a href="#leadership" class="hover:text-accent transition">Service</a>
                 <a href="#skills" class="hover:text-accent transition">Skills</a>
                 <a href="resume.pdf" target="_blank" class="bg-navy text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-slate-800 transition inline-flex items-center gap-1.5 shadow-sm">
                     <i class="fa-solid fa-file-pdf"></i> Resume / CV
@@ -52,11 +62,12 @@
         <!-- Mobile Dropdown Menu -->
         <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 bg-white px-6 py-4 space-y-3 text-sm font-medium text-slate-600">
             <a href="#about" class="block hover:text-accent">About</a>
-            <a href="#projects" class="block hover:text-accent">Research & Experience</a>
+            <a href="#research" class="block hover:text-accent">Research & Experience</a>
+            <a href="#projects" class="block hover:text-accent">Projects</a>
             <a href="#publications" class="block hover:text-accent">Publications</a>
             <a href="#teaching" class="block hover:text-accent">Teaching</a>
             <a href="#awards" class="block hover:text-accent">Awards & Fellowships</a>
-            <a href="#leadership" class="block hover:text-accent">Leadership & Service</a>
+            <a href="#leadership" class="block hover:text-accent">Service & Leadership</a>
             <a href="#skills" class="block hover:text-accent">Skills</a>
             <a href="resume.pdf" target="_blank" class="block text-accent font-semibold">Resume / CV</a>
         </div>
@@ -68,17 +79,17 @@
             
             <!-- Left Bio Text -->
             <div class="space-y-4 flex-1">
-                <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-800 border border-blue-200 text-xs font-semibold px-3 py-1 rounded-full">
-                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                <div class="inline-flex items-center gap-2 bg-teal-50 text-teal-800 border border-teal-200 text-xs font-semibold px-3 py-1 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
                     Ph.D. Candidate @ UC Santa Cruz
                 </div>
                 
-                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-                    Hi, I'm Richard Wang.
+                <h1 class="font-display text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+                    I study why speech recognition fails on how people actually talk.
                 </h1>
-                
+
                 <p class="text-lg text-slate-600 leading-relaxed">
-                    I am a computational linguist and speech scientist specializing in ASR evaluation, speech corpus analysis, and acoustic modeling. My research focuses on the speech variation that standard systems routinely ignore — accents, dialects, and casual speech — across both low-resource and widely spoken languages. My goal is to make speech-to-text products more accurate, robust, and natural for the full range of real-world users.
+                    I'm Richard Wang, a computational linguist and speech scientist. I evaluate ASR systems, build tools for annotating casual and dialectal speech, and measure the variation that standard models treat as noise, in Beijing Mandarin and in low-resource languages like the Munda family.
                 </p>
                 
                 <div class="pt-2 flex flex-wrap gap-3">
@@ -88,7 +99,7 @@
                     <a href="https://github.com/houlin00" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-slate-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-blue-600 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
+                    <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-teal-600 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
                     <a href="https://rhwang.sites.ucsc.edu" target="_blank" class="flex items-center gap-2 border border-slate-300 bg-white text-slate-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 transition shadow-sm">
@@ -119,11 +130,11 @@
             </div>
             <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
                 <div class="text-2xl font-bold text-navy">90+ hrs</div>
-                <div class="text-xs text-slate-500 font-medium mt-0.5">Audio Data Governed</div>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">Audio Annotated & QC'd</div>
             </div>
             <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
-                <div class="text-2xl font-bold text-navy">4+</div>
-                <div class="text-xs text-slate-500 font-medium mt-0.5">Peer-Reviewed Works</div>
+                <div class="text-2xl font-bold text-navy">2</div>
+                <div class="text-xs text-slate-500 font-medium mt-0.5">Proceedings Papers + 4 Talks/Posters</div>
             </div>
             <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
                 <div class="text-2xl font-bold text-navy">10x</div>
@@ -135,12 +146,12 @@
     <!-- EDUCATION SECTION -->
     <section class="py-12 bg-white border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-navy mb-6">Education</h2>
+            <h2 class="font-display text-2xl font-bold text-navy mb-6">Education</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 
                 <div class="p-5 rounded-xl border border-slate-200 bg-lightbg shadow-sm">
                     <div class="flex justify-between items-start">
-                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Doctoral Program</span>
+                        <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Doctoral Program</span>
                         <span class="text-xs text-slate-400 font-medium">Expected June 2027</span>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 mt-1">University of California, Santa Cruz</h3>
@@ -150,11 +161,11 @@
 
                 <div class="p-5 rounded-xl border border-slate-200 bg-lightbg shadow-sm">
                     <div class="flex justify-between items-start">
-                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Undergraduate & Master's</span>
+                        <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Undergraduate & Master's</span>
                         <span class="text-xs text-slate-400 font-medium">2018 – 2022</span>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 mt-1">University of California, Los Angeles</h3>
-                    <p class="text-sm font-semibold text-slate-700">M.A. in Linguistics (GPA: 3.97) | B.A., Magna Cum Laude (GPA: 3.95)</p>
+                    <p class="text-sm font-semibold text-slate-700">M.A. in Linguistics | B.A. in Linguistics, Magna Cum Laude</p>
                     <p class="text-xs text-slate-500 mt-1">Specialization in Computation · Minor in Japanese · UCLA Department Scholar</p>
                 </div>
 
@@ -163,9 +174,9 @@
     </section>
 
     <!-- FEATURED RESEARCH & EXPERIENCE -->
-    <section id="projects" class="py-16 bg-lightbg border-t border-slate-200">
+    <section id="research" class="py-16 bg-lightbg border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-navy mb-2">Featured Research & Experience</h2>
+            <h2 class="font-display text-2xl font-bold text-navy mb-2">Featured Research & Experience</h2>
             <p class="text-slate-600 mb-8">Selected initiatives across speech recognition benchmarking, acoustic modeling, and quantitative data pipelines.</p>
 
             <div class="grid md:grid-cols-2 gap-6">
@@ -174,12 +185,12 @@
                 <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-white flex flex-col justify-between shadow-sm">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Living Tongues Institute</span>
-                            <span class="text-xs text-slate-400">Summer 2026</span>
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">AI Evaluation Researcher · Living Tongues Institute</span>
+                            <span class="text-xs text-slate-400">Jun – Aug 2026</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">ASR Evaluation on Severely Under-Resourced Languages</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Conducted independent evaluation of Meta's Omnilingual ASR model across five severely under-resourced Munda languages, testing both training languages and zero-shot generalization. Identified systematic failure modes including decoder looping, script divergence, and mislabeled training data. Governed and annotated 90+ hours of speech corpus data, standardizing QA protocols across a distributed team.
+                            Conducted independent evaluation of Meta's Omnilingual ASR model across five severely under-resourced Munda languages, testing both training languages and zero-shot generalization. Identified systematic failure modes including decoder looping, script divergence, and mislabeled training data. Annotated and quality-checked 90+ hours of speech corpus data, standardizing QA protocols across a distributed team.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-100">
@@ -193,12 +204,12 @@
                 <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-white flex flex-col justify-between shadow-sm">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">UC Santa Cruz</span>
-                            <span class="text-xs text-slate-400">2022 – Present</span>
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Computational Linguistics Researcher · UC Santa Cruz</span>
+                            <span class="text-xs text-slate-400">Sep 2022 – Present</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Acoustic Modeling of Overlooked Speech Variation</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Built end-to-end acoustic analysis pipelines in Python and R for feature extraction, signal processing, and automated quality control, enabling analysis at 10x the scale of manual methods. Applied mixed-effects regression, bootstrapping, and ML classification across 20,000+ model iterations over 8 interacting variables to model speech variation, overturning the prevailing theoretical account in the field.
+                            Built end-to-end acoustic analysis pipelines in Python and R for feature extraction, signal processing, and automated quality control, enabling analysis at 10x the scale of manual methods. Applied mixed-effects regression, bootstrapping, and ML classification across 20,000+ model iterations over 8 interacting variables to model speech variation. Showed that segment duration does not predict retroflex lenition in Beijing Mandarin, contrary to the standard duration-based account.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-100">
@@ -212,8 +223,8 @@
                 <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-white flex flex-col justify-between shadow-sm">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Science Internship Program (SIP), UCSC</span>
-                            <span class="text-xs text-slate-400">Summer 2026</span>
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Research Mentor &amp; Instructor · SIP, UC Santa Cruz</span>
+                            <span class="text-xs text-slate-400">Jun – Aug 2026</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Computational Research Mentorship & Instruction</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
@@ -231,8 +242,8 @@
                 <div class="border border-slate-200 rounded-xl p-6 hover:shadow-lg transition bg-white flex flex-col justify-between shadow-sm">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">UCLA Computational Phonology Labs</span>
-                            <span class="text-xs text-slate-400">2019 – 2021</span>
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Research Assistant · UCLA Computational Phonology Labs</span>
+                            <span class="text-xs text-slate-400">Sep 2019 – Jun 2021</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Lexicon Modeling & Corpus Analysis Pipelines</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
@@ -250,13 +261,97 @@
         </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="font-display text-2xl font-bold text-navy mb-2">Projects</h2>
+            <p class="text-slate-600 mb-8">Open tools built out of my research, trained on public corpora where possible. Each one lists what it is for, how it was evaluated, and where it falls short.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-lightbg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Speech Alignment</span>
+                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">In progress</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Mandarin Forced Aligner with Erhua</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            A small-data forced aligner for Beijing Mandarin that handles erhua (r-coloring), which general aligners tend to mis-segment. Compares Montreal Forced Aligner, Charsiu, and a fine-tuned model, with boundary error reported by phone class. Intended for annotating dialect speech without hand-aligning every file.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
+                        <span class="bg-white border px-2.5 py-1 rounded">Python</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">PyTorch</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">MFA / Charsiu</span>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-lightbg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Casual-Speech Detection</span>
+                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">In progress</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Lenition Detector for Mandarin</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            A classifier that flags whether a retroflex onset has weakened, using acoustic features from Praat/Parselmouth and a model trained on AISHELL-3 and tested on separately recorded speakers. Useful for corpus QA and for finding the casual-speech tokens that ASR training data under-represents.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
+                        <span class="bg-white border px-2.5 py-1 rounded">scikit-learn</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">Parselmouth</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">AISHELL-3</span>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-lightbg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">ASR Evaluation</span>
+                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">In progress</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">ASR Failure-Mode Toolkit</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Goes beyond WER/CER: detects repetition loops, wrong-script output, and language-ID drift in ASR transcripts, and breaks errors down by linguistic category. Generalizes the failure modes found in my Omnilingual ASR evaluation to any model and language.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
+                        <span class="bg-white border px-2.5 py-1 rounded">Python</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">WER / CER</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">Whisper / wav2vec 2.0</span>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-6 bg-lightbg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Prosody Annotation</span>
+                            <span class="text-xs font-semibold text-slate-600 bg-white border border-slate-300 px-2 py-0.5 rounded">Planned</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Mandarin Prosody Annotation Helper</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Suggests tone and boundary labels from pitch tracks to speed up ToBI-style annotation of Mandarin, with inter-annotator agreement reporting so the labels can be trusted for downstream use.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
+                        <span class="bg-white border px-2.5 py-1 rounded">Praat / TextGrid</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">Annotation Agreement</span>
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-sm text-slate-500 mt-6">Code and write-ups will appear on <a href="https://github.com/houlin00" target="_blank" class="text-accent hover:underline">GitHub</a> as each project is released.</p>
+        </div>
+    </section>
+
     <!-- PUBLICATIONS & PRESENTATIONS -->
     <section id="publications" class="py-16 bg-white border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6 space-y-12">
             
             <!-- Publications -->
             <div>
-                <h2 class="text-2xl font-bold text-navy mb-6">Publications</h2>
+                <h2 class="font-display text-2xl font-bold text-navy mb-6">Publications</h2>
                 
                 <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Proceedings</h3>
                 <ul class="space-y-3 mb-6 text-sm text-slate-700">
@@ -285,7 +380,7 @@
 
             <!-- Presentations -->
             <div>
-                <h2 class="text-2xl font-bold text-navy mb-6">Presentations & Talks</h2>
+                <h2 class="font-display text-2xl font-bold text-navy mb-6">Presentations & Talks</h2>
                 
                 <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Invited Talks</h3>
                 <ul class="space-y-3 mb-6 text-sm text-slate-700">
@@ -296,11 +391,15 @@
 
                 <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Conference Posters</h3>
                 <ul class="space-y-3 text-sm text-slate-700">
+                    <li class="bg-lightbg p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <strong>Wang, Richard</strong>. 2026. <em>The Dual Nature of Retroflex Lenition: Categorical Prosodic Constraints and Gradient Phonetic Effects</em>. Accepted, Hanyang International Symposium on Phonetics and Cognitive Sciences of Language.
+                    </li>
+
                     <li class="bg-lightbg p-4 rounded-lg border border-slate-200 flex flex-col md:flex-row md:justify-between md:items-center gap-2 shadow-sm">
                         <div>
                             <strong>Wang, Richard</strong>. 2024. <em>Distribution of neutral tone and retroflex lenition in Beijing Mandarin</em>. Presented at the 100th Annual Meeting of the Linguistic Society of America, New York, NY. Jan 2.
                         </div>
-                        <a href="https://drive.google.com/file/d/1ftybTbG0-pZCxllmmNQHLeh1P3Vfjq3E/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0 font-medium">
+                        <a href="https://drive.google.com/file/d/1ftybTbG0-pZCxllmmNQHLeh1P3Vfjq3E/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-teal-600 border border-teal-200 bg-teal-50 px-3 py-1 rounded hover:bg-teal-100 shrink-0 font-medium">
                             <i class="fa-solid fa-file-pdf"></i> Poster PDF
                         </a>
                     </li>
@@ -309,7 +408,7 @@
                         <div>
                             <strong>Wang, Richard</strong>. 2023. <em>Distribution of neutral tone and retroflex lenition in Beijing Mandarin</em>. Presented at the Annual Meeting on Phonology. Online, hosted by Johns Hopkins University. Oct 13.
                         </div>
-                        <a href="https://drive.google.com/file/d/1NspNPxnjxNOgfITI5isaB40XczzFziaI/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0 font-medium">
+                        <a href="https://drive.google.com/file/d/1NspNPxnjxNOgfITI5isaB40XczzFziaI/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-teal-600 border border-teal-200 bg-teal-50 px-3 py-1 rounded hover:bg-teal-100 shrink-0 font-medium">
                             <i class="fa-solid fa-file-pdf"></i> Poster PDF
                         </a>
                     </li>
@@ -318,7 +417,7 @@
                         <div>
                             <strong>Wang, Richard</strong>. 2023. <em>Morphosyntactically conditioned footing in Beijing Mandarin: Evidence from retroflex lenition</em>. Presented at the 41st West Coast Conference on Formal Linguistics, UC Santa Cruz, Santa Cruz, CA. May 4.
                         </div>
-                        <a href="https://drive.google.com/file/d/1o13tv1VJMp67bUWLMCcb1ukCfbnmwThs/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-blue-600 border border-blue-200 bg-blue-50 px-3 py-1 rounded hover:bg-blue-100 shrink-0 font-medium">
+                        <a href="https://drive.google.com/file/d/1o13tv1VJMp67bUWLMCcb1ukCfbnmwThs/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1 text-xs text-teal-600 border border-teal-200 bg-teal-50 px-3 py-1 rounded hover:bg-teal-100 shrink-0 font-medium">
                             <i class="fa-solid fa-file-pdf"></i> Poster PDF
                         </a>
                     </li>
@@ -331,182 +430,62 @@
     <!-- TEACHING EXPERIENCE -->
     <section id="teaching" class="py-16 bg-lightbg border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
-            <!-- Header with Scroll Cue -->
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-navy mb-1">Teaching Experience</h2>
-                    <p class="text-slate-600 text-sm">Instructional appointments across 13 quarters at UC Santa Cruz.</p>
-                </div>
-                <div class="mt-2 sm:mt-0 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full shadow-sm">
-                    <i class="fa-solid fa-arrows-up-down text-blue-600"></i> Scroll to view all (13 courses)
-                </div>
-            </div>
-
-            <!-- Relative Wrapper for Gradient Overlay -->
-            <div class="relative bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
-                
-                <!-- Scrollable List Container (4 items visible) -->
-                <div class="p-4 sm:p-6 max-h-[260px] overflow-y-auto divide-y divide-slate-100 pr-3 pb-8 [scrollbar-width:thin] [scrollbar-color:#cbd5e1_transparent]">
-                    
-                    <!-- Spring 2026 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 80K: Invented Languages</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Supervisor: Andrew Angeles)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Spring 2026</span>
-                    </div>
-
-                    <!-- Winter 2026 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 50: Introduction to Linguistics</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Supervisor: Andrew Angeles)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Winter 2026</span>
-                    </div>
-
-                    <!-- Fall 2025 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 100: Phonetics I</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Supervisor: Jaye Padgett)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Fall 2025</span>
-                    </div>
-
-                    <!-- Summer 2025 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 80K: Invented Languages</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Supervisor: Andrew Angeles)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Summer 2025</span>
-                    </div>
-
-                    <!-- Spring 2025 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 151: Phonetics II</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor of Record: Jaye Padgett)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Spring 2025</span>
-                    </div>
-
-                    <!-- Winter 2025 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 80M: Language and Indigeneity in Mesoamerica</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor of Record: Ryan Bennett)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Winter 2025</span>
-                    </div>
-
-                    <!-- Fall 2024 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 102: Phonology II</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Rachel Walker)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Fall 2024</span>
-                    </div>
-
-                    <!-- Summer 2024 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 50: Introduction to Linguistics</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Summer 2024</span>
-                    </div>
-
-                    <!-- Spring 2024 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 50: Introduction to Linguistics</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Andrew Angeles)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Spring 2024</span>
-                    </div>
-
-                    <!-- Winter 2024 (101) -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 101: Phonology I</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Winter 2024</span>
-                    </div>
-
-                    <!-- Winter 2024 (80M) -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 80M: Language and Indigeneity in Mesoamerica</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Ryan Bennett)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Winter 2024</span>
-                    </div>
-
-                    <!-- Fall 2023 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 100: Phonetics I</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Amanda Rysling)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Fall 2023</span>
-                    </div>
-
-                    <!-- Summer 2023 -->
-                    <div class="py-3 flex flex-col md:flex-row md:justify-between md:items-center">
-                        <div>
-                            <span class="font-bold text-slate-900 text-sm">Ling 50: Introduction to Linguistics</span>
-                            <span class="text-xs text-slate-500 block md:inline md:ml-2">(Instructor: Matt Wagers)</span>
-                        </div>
-                        <span class="text-xs font-semibold text-blue-600 shrink-0 mt-1 md:mt-0">Summer 2023</span>
-                    </div>
-
-                </div>
-
-                <!-- Bottom Fade Overlay (pointer-events-none lets user scroll through it) -->
-                <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
-
-            </div>
+            <h2 class="font-display text-2xl font-bold text-navy mb-2">Teaching</h2>
+            <p class="text-slate-600 text-sm mb-4">13 quarters as a teaching assistant and instructor at UC Santa Cruz, mostly phonetics and phonology, plus Introduction to Linguistics and Invented Languages.</p>
+            <details class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 text-sm">
+                <summary class="cursor-pointer font-semibold text-slate-700">Full course list (13)</summary>
+                <ul class="mt-3 divide-y divide-slate-100">
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 80K: Invented Languages</span> <span class="text-slate-500">(Supervisor: Andrew Angeles)</span></span><span class="text-teal-700 font-semibold shrink-0">Spring 2026</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 50: Introduction to Linguistics</span> <span class="text-slate-500">(Supervisor: Andrew Angeles)</span></span><span class="text-teal-700 font-semibold shrink-0">Winter 2026</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 100: Phonetics I</span> <span class="text-slate-500">(Supervisor: Jaye Padgett)</span></span><span class="text-teal-700 font-semibold shrink-0">Fall 2025</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 80K: Invented Languages</span> <span class="text-slate-500">(Supervisor: Andrew Angeles)</span></span><span class="text-teal-700 font-semibold shrink-0">Summer 2025</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 151: Phonetics II</span> <span class="text-slate-500">(Instructor of Record: Jaye Padgett)</span></span><span class="text-teal-700 font-semibold shrink-0">Spring 2025</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 80M: Language and Indigeneity in Mesoamerica</span> <span class="text-slate-500">(Instructor of Record: Ryan Bennett)</span></span><span class="text-teal-700 font-semibold shrink-0">Winter 2025</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 102: Phonology II</span> <span class="text-slate-500">(Instructor: Rachel Walker)</span></span><span class="text-teal-700 font-semibold shrink-0">Fall 2024</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 50: Introduction to Linguistics</span> <span class="text-slate-500">(Instructor: Amanda Rysling)</span></span><span class="text-teal-700 font-semibold shrink-0">Summer 2024</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 50: Introduction to Linguistics</span> <span class="text-slate-500">(Instructor: Andrew Angeles)</span></span><span class="text-teal-700 font-semibold shrink-0">Spring 2024</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 101: Phonology I</span> <span class="text-slate-500">(Instructor: Amanda Rysling)</span></span><span class="text-teal-700 font-semibold shrink-0">Winter 2024</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 80M: Language and Indigeneity in Mesoamerica</span> <span class="text-slate-500">(Instructor: Ryan Bennett)</span></span><span class="text-teal-700 font-semibold shrink-0">Winter 2024</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 100: Phonetics I</span> <span class="text-slate-500">(Instructor: Amanda Rysling)</span></span><span class="text-teal-700 font-semibold shrink-0">Fall 2023</span></li>
+<li class="py-2 flex justify-between gap-4"><span><span class="font-semibold text-slate-900">Ling 50: Introduction to Linguistics</span> <span class="text-slate-500">(Instructor: Matt Wagers)</span></span><span class="text-teal-700 font-semibold shrink-0">Summer 2023</span></li>
+                </ul>
+            </details>
         </div>
     </section>
 
     <!-- AWARDS & FELLOWSHIPS -->
     <section id="awards" class="py-16 bg-white border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-navy mb-2">Awards & Fellowships</h2>
+            <h2 class="font-display text-2xl font-bold text-navy mb-2">Awards & Fellowships</h2>
             <p class="text-slate-600 mb-8">Selected competitive funding and institutional research fellowships.</p>
 
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="p-4 bg-lightbg border border-slate-200 rounded-xl shadow-sm">
-                    <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">2026 · $6,000</span>
+                    <span class="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded">2026 · $6,000</span>
                     <h3 class="font-bold text-slate-900 text-sm mt-2">THI Summer Public Fellowship</h3>
                     <p class="text-xs text-slate-500 mt-1">The Humanities Institute, UC Santa Cruz</p>
                 </div>
 
                 <div class="p-4 bg-lightbg border border-slate-200 rounded-xl shadow-sm">
-                    <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">2026 · $5,000</span>
+                    <span class="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded">2026 · $5,000</span>
                     <h3 class="font-bold text-slate-900 text-sm mt-2">THI Summer Dissertation Fellowship</h3>
                     <p class="text-xs text-slate-500 mt-1">The Humanities Institute, UC Santa Cruz</p>
                 </div>
 
                 <div class="p-4 bg-lightbg border border-slate-200 rounded-xl shadow-sm">
-                    <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">2026 · $4,750</span>
+                    <span class="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded">2026 · $4,750</span>
                     <h3 class="font-bold text-slate-900 text-sm mt-2">Science Internship Program (SIP) Fellowship</h3>
                     <p class="text-xs text-slate-500 mt-1">UC Santa Cruz</p>
                 </div>
 
                 <div class="p-4 bg-lightbg border border-slate-200 rounded-xl shadow-sm">
-                    <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">2023–2024 · $1,400</span>
+                    <span class="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded">2023–2024 · $1,400</span>
                     <h3 class="font-bold text-slate-900 text-sm mt-2">Graduate Communications Fellowship</h3>
                     <p class="text-xs text-slate-500 mt-1">The Humanities Institute, UC Santa Cruz</p>
                 </div>
 
                 <div class="p-4 bg-lightbg border border-slate-200 rounded-xl shadow-sm">
-                    <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">2023 · $2,500</span>
+                    <span class="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded">2023 · $2,500</span>
                     <h3 class="font-bold text-slate-900 text-sm mt-2">LSA Linguistic Institute Fellowship</h3>
                     <p class="text-xs text-slate-500 mt-1">Linguistic Society of America</p>
                 </div>
@@ -523,26 +502,26 @@
     <!-- LEADERSHIP & SERVICE -->
     <section id="leadership" class="py-16 bg-lightbg border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-navy mb-2">Leadership & Academic Service</h2>
+            <h2 class="font-display text-2xl font-bold text-navy mb-2">Leadership & Academic Service</h2>
             <p class="text-slate-600 mb-8">Departmental stewardship, conference management, and equity initiatives.</p>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="text-xs font-bold text-blue-600 uppercase">2022 – 2024</div>
+                    <div class="text-xs font-bold text-teal-600 uppercase">2022 – 2024</div>
                     <h3 class="font-bold text-slate-900 mt-1">Committee Chair</h3>
                     <p class="text-xs text-slate-500 mb-2">UCSC Linguistics Department</p>
                     <p class="text-sm text-slate-600">Managed logistics, budgets, and cross-team coordination for 5+ departmental events serving 50+ attendees.</p>
                 </div>
 
                 <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="text-xs font-bold text-blue-600 uppercase">2022 – 2024</div>
+                    <div class="text-xs font-bold text-teal-600 uppercase">2022 – 2024</div>
                     <h3 class="font-bold text-slate-900 mt-1">Newsletter Editor</h3>
                     <p class="text-xs text-slate-500 mb-2">UCSC Linguistics Department</p>
                     <p class="text-sm text-slate-600">Spearheaded an editorial team of 10+ contributors, curating and publishing monthly research editions on schedule.</p>
                 </div>
 
                 <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="text-xs font-bold text-blue-600 uppercase">2023 – 2025</div>
+                    <div class="text-xs font-bold text-teal-600 uppercase">2023 – 2025</div>
                     <h3 class="font-bold text-slate-900 mt-1">Equity Committee Member</h3>
                     <p class="text-xs text-slate-500 mb-2">UCSC Linguistics Department</p>
                     <p class="text-sm text-slate-600">Partnered with departmental leadership to formulate and execute initiatives supporting international scholar accessibility and inclusion.</p>
@@ -553,11 +532,11 @@
 
     <!-- SKILLS & TECHNICAL STACK -->
     <section id="skills" class="py-16 max-w-5xl mx-auto px-6">
-        <h2 class="text-2xl font-bold text-navy mb-8">Technical & Methodological Toolkit</h2>
+        <h2 class="font-display text-2xl font-bold text-navy mb-8">Technical & Methodological Toolkit</h2>
         <div class="grid md:grid-cols-3 gap-6">
             
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
-                <div class="text-blue-600 text-2xl mb-3"><i class="fa-solid fa-microphone-lines"></i></div>
+                <div class="text-teal-600 text-2xl mb-3"><i class="fa-solid fa-microphone-lines"></i></div>
                 <h3 class="font-bold text-slate-900 mb-2">Speech & Language Processing</h3>
                 <ul class="text-sm text-slate-600 space-y-1.5">
                     <li>• Automatic Speech Recognition (ASR)</li>
@@ -570,7 +549,7 @@
             </div>
 
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
-                <div class="text-blue-600 text-2xl mb-3"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="text-teal-600 text-2xl mb-3"><i class="fa-solid fa-chart-line"></i></div>
                 <h3 class="font-bold text-slate-900 mb-2">ML & Statistics</h3>
                 <ul class="text-sm text-slate-600 space-y-1.5">
                     <li>• Mixed-Effects Regression (lme4)</li>
@@ -582,7 +561,7 @@
             </div>
 
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
-                <div class="text-blue-600 text-2xl mb-3"><i class="fa-solid fa-code"></i></div>
+                <div class="text-teal-600 text-2xl mb-3"><i class="fa-solid fa-code"></i></div>
                 <h3 class="font-bold text-slate-900 mb-2">Programming & Tools</h3>
                 <ul class="text-sm text-slate-600 space-y-1.5">
                     <li>• Python, R, SQL</li>
@@ -599,12 +578,12 @@
     <!-- FOOTER -->
     <footer class="bg-navy text-white py-12 border-t border-slate-800">
         <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
-            <p class="text-sm text-slate-300">© 2026 Richard Houlin Wang. Ph.D. Candidate in Linguistics, UC Santa Cruz.</p>
+            <p class="text-sm text-slate-300">© 2026 Houlin (Richard) Wang. Ph.D. Candidate in Linguistics, UC Santa Cruz.</p>
             <div class="flex justify-center gap-6 text-lg text-slate-400">
-                <a href="mailto:hwang374@ucsc.edu" class="hover:text-white transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/houlin00" target="_blank" class="hover:text-white transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="hover:text-white transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://rhwang.sites.ucsc.edu" target="_blank" class="hover:text-white transition" title="UCSC Sites"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="mailto:hwang374@ucsc.edu" class="hover:text-white transition" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/houlin00" target="_blank" class="hover:text-white transition" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/richard-wang-494662340/" target="_blank" class="hover:text-white transition" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://rhwang.sites.ucsc.edu" target="_blank" class="hover:text-white transition" title="UCSC Sites" aria-label="UCSC Sites"><i class="fa-solid fa-graduation-cap"></i></a>
             </div>
         </div>
     </footer>
