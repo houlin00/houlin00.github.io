@@ -270,7 +270,7 @@
     <section id="projects" class="py-16 bg-white border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="font-display text-2xl font-bold text-navy mb-2">Projects</h2>
-            <p class="text-slate-600 mb-8">Open tools built out of my research, trained on public corpora where possible. Each one lists what it is for, how it was evaluated, and where it falls short.</p>
+            <p class="text-slate-600 mb-8">Code from my research and evaluation work. Recordings and participant data are not included; each repo says what it is for and where it falls short.</p>
 
             <div class="grid md:grid-cols-2 gap-6">
 
@@ -278,17 +278,16 @@
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Speech Alignment</span>
-                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">In progress</span>
+                            <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">Released</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Mandarin Forced Aligner with Erhua</h3>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Mandarin Word-List Aligner</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            A small-data forced aligner for Beijing Mandarin that handles erhua (r-coloring), which general aligners tend to mis-segment. Compares Montreal Forced Aligner, Charsiu, and a fine-tuned model, with boundary error reported by phone class. Intended for annotating dialect speech without hand-aligning every file.
+                            Finds every word in long recordings of a read word list by scoring segments against the known list, repairs boundaries with the Montreal Forced Aligner, and measures how alignment accuracy drops on lenited syllables. Built for annotating dissertation-scale data without hand-aligning every file.
                         </p>
+                        <a href="https://github.com/houlin00/mandarin-wordlist-aligner" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-700 hover:underline mb-4"><i class="fa-brands fa-github"></i> View on GitHub</a>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
-                        <span class="bg-white border px-2.5 py-1 rounded">Python</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">PyTorch</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">MFA / Charsiu</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">Python</span><span class="bg-white border px-2.5 py-1 rounded">MFA</span><span class="bg-white border px-2.5 py-1 rounded">wav2vec 2.0</span><span class="bg-white border px-2.5 py-1 rounded">Praat</span>
                     </div>
                 </div>
 
@@ -296,17 +295,16 @@
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Casual-Speech Detection</span>
-                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">In progress</span>
+                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">Early results</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Lenition Detector for Mandarin</h3>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Lenition Classifier for Mandarin</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            A classifier that flags whether a retroflex onset has weakened, built on acoustic features from Praat/Parselmouth and public Mandarin corpora (AISHELL-3, THCHS-30). Meant for corpus quality monitoring and for finding the casual-speech tokens that ASR training data under-represents.
+                            An acoustic classifier for hand-coded lenition of retroflex syllables: trained on one speaker, tested on another, AUC 0.82 on two annotated speakers (preliminary). A corpus-scale version trained on AISHELL-3 and THCHS-30 is in progress.
                         </p>
+                        <a href="https://github.com/houlin00/mandarin-wordlist-aligner/tree/main/lenition" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-700 hover:underline mb-4"><i class="fa-brands fa-github"></i> View on GitHub</a>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
-                        <span class="bg-white border px-2.5 py-1 rounded">scikit-learn</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Parselmouth</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">AISHELL-3 / THCHS-30</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">scikit-learn</span><span class="bg-white border px-2.5 py-1 rounded">librosa</span><span class="bg-white border px-2.5 py-1 rounded">Praat</span><span class="bg-white border px-2.5 py-1 rounded">AISHELL-3 / THCHS-30</span>
                     </div>
                 </div>
 
@@ -314,17 +312,16 @@
                     <div>
                         <div class="flex justify-between items-start mb-3">
                             <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">ASR Evaluation</span>
-                            <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">In progress</span>
+                            <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">Released</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">ASR Failure-Mode Toolkit</h3>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">ASR Error Metrics</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Goes beyond WER/CER: detects repetition loops, wrong-script output, and language-ID drift in ASR transcripts, and breaks errors down by linguistic category. Generalizes the failure modes found in my Omnilingual ASR evaluation to any model and language.
+                            WER and CER that keep the alignment, so you can see which words or characters were substituted, dropped or inserted, plus pooled corpus rates and the most common substitutions. Written for evaluating ASR on low-resource languages, where one error rate hides several failure types.
                         </p>
+                        <a href="https://github.com/houlin00/asr-error-metrics" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-700 hover:underline mb-4"><i class="fa-brands fa-github"></i> View on GitHub</a>
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
-                        <span class="bg-white border px-2.5 py-1 rounded">Python</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">WER / CER</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Whisper / wav2vec 2.0</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">Python</span><span class="bg-white border px-2.5 py-1 rounded">WER / CER</span><span class="bg-white border px-2.5 py-1 rounded">unit tests</span>
                     </div>
                 </div>
 
@@ -338,15 +335,15 @@
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
                             Suggests tone and boundary labels from pitch tracks to speed up ToBI-style annotation of Mandarin, with inter-annotator agreement reporting so the labels can be trusted for downstream use.
                         </p>
+                        
                     </div>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600 pt-3 border-t border-slate-200">
-                        <span class="bg-white border px-2.5 py-1 rounded">Praat / TextGrid</span>
-                        <span class="bg-white border px-2.5 py-1 rounded">Annotation Agreement</span>
+                        <span class="bg-white border px-2.5 py-1 rounded">Praat / TextGrid</span><span class="bg-white border px-2.5 py-1 rounded">Annotation Agreement</span>
                     </div>
                 </div>
 
             </div>
-            <p class="text-sm text-slate-500 mt-6">Code and write-ups will appear on <a href="https://github.com/houlin00" target="_blank" class="text-accent hover:underline">GitHub</a> as each project is released.</p>
+            <p class="text-sm text-slate-500 mt-6">More on <a href="https://github.com/houlin00" target="_blank" class="text-accent hover:underline">GitHub</a>.</p>
         </div>
     </section>
 
